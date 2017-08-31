@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "description": "NgZorro font icon local deployment",
   "main": "index.js",
-  "repository": "git@github.com:hjin-me/fuck-anticon.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/hjin-me/fuck-anticon.git"
+  },
   "author": "hjin-me <hjin.me@gmail.com>",
   "license": "MIT",
   "scripts": {
@@ -19,5 +22,16 @@
   "devDependencies": {
     "jasmine": "^2.8.0",
     "ng-zorro-antd": "^0.5.0-rc.3"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/hjin-me/fuck-anticon/issues"
+  },
+  "homepage": "https://github.com/hjin-me/fuck-anticon#readme",
+  "keywords": [
+    "angular",
+    "ant",
+    "design",
+    "ng-zorro",
+    "fonticon"
+  ]
 }
