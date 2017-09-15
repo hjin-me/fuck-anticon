@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@angular/cdk@^2.0.0-beta.8":
-  version "2.0.0-beta.10"
-  resolved "http://registry.npm.taobao.org/@angular/cdk/download/@angular/cdk-2.0.0-beta.10.tgz#7ffcc430d6f67dfde1df25e1fa693c188e4da08a"
+"@angular/cdk@2.0.0-beta.8":
+  version "2.0.0-beta.8"
+  resolved "http://npm.avlyun.org/@angular/cdk/download/@angular/cdk-2.0.0-beta.8.tgz#71961c851dfbeb19e085e898bf5e4461408f8b57"
   dependencies:
     tslib "^1.7.1"
 
@@ -280,12 +280,13 @@ nested-error-stacks@^2.0.0:
   dependencies:
     inherits "~2.0.1"
 
-ng-zorro-antd@^0.5.0-rc.3:
-  version "0.5.0-rc.3"
-  resolved "http://registry.npm.taobao.org/ng-zorro-antd/download/ng-zorro-antd-0.5.0-rc.3.tgz#d57e892bfa412f9c1f01c4d5321fba00377b08c7"
+ng-zorro-antd@^0.5.0:
+  version "0.5.0"
+  resolved "http://npm.avlyun.org/ng-zorro-antd/download/ng-zorro-antd-0.5.0.tgz#3999d3d525f1f77e9aca184ad896d82746387a12"
   dependencies:
-    "@angular/cdk" "^2.0.0-beta.8"
+    "@angular/cdk" "2.0.0-beta.8"
     moment "^2.18.1"
+    tslib "^1.7.1"
 
 normalize-package-data@^2.3.2:
   version "2.4.0"
@@ -382,8 +383,8 @@ read-pkg@^2.0.0:
     path-type "^2.0.0"
 
 replace-in-file@^2.6.3:
-  version "2.6.3"
-  resolved "http://registry.npm.taobao.org/replace-in-file/download/replace-in-file-2.6.3.tgz#1b970abd6026be89be6aeb95658ab92f83c39438"
+  version "2.6.4"
+  resolved "http://npm.avlyun.org/replace-in-file/download/replace-in-file-2.6.4.tgz#a80e25c5c0e0efe9d04afe01a4a57ff98e8b6461"
   dependencies:
     chalk "^2.1.0"
     glob "^7.1.2"

@@ -4,9 +4,9 @@ const replace = require('replace-in-file');
 
 const options = {
   files: [
-    'node_modules/ng-zorro-antd/src/release/**/*.js'
+    'node_modules/ng-zorro-antd/**/*.js'
   ],
-  from: /@font-face {[^{]*?anticon.*?}/ig,
+  from: /@font-face {[^{}]*?anticon[^{}]*?}/ig,
   to: ''
 };
 
