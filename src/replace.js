@@ -1,23 +1,18 @@
 #!/usr/bin/env node
 'use strict';
-const replace = require('replace-in-file');
+const ngReplace = require('./ng');
+const reactReplace = require('./react');
 
-const options = {
-  files: [
-    'node_modules/ng-zorro-antd/**/*.js'
-  ],
-  from: /@font-face {[^{}]*?anticon[^{}]*?}/ig,
-  to: ''
-};
+const pkg = require(require('path').join(process.cwd(), './package.json'));
 
-module.exports = new Promise((resolve, reject) => {
-  replace(options)
-    .then(changedFiles => {
-      console.log('Modified files:', changedFiles.join(', '));
-      resolve()
-    })
-    .catch(error => {
-      console.error('Error occurred:', error);
-      reject()
-    });
-});
+if (pkgContain(pkg, 'antd')) {
+  reactReplace();
+}
+
+if (pkgContain(pkg, 'ng-zorro-antd')) {
+  ngReplace();
+}
+
+function pkgContain(pkg, search) {
+  return Object.keys(pkg.dependencies).indexOf(search) > -1 || Object.keys(pkg.devDependencies).indexOf(search) > -1;
+}
