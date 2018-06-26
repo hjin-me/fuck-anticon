@@ -1,7 +1,7 @@
 {
   "name": "@hjin/fuck-anticon",
-  "version": "0.3.0",
-  "description": "NgZorro font icon local deployment",
+  "version": "0.4.0",
+  "description": "AntD or NgZorro font icon local deployment",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -17,9 +17,11 @@
   },
   "dependencies": {
     "cp-file": "^5.0.0",
-    "replace-in-file": "^3.1.1"
+    "replace-in-file": "^3.1.1",
+    "semver": "^5.5.0"
   },
   "devDependencies": {
+    "prettier": "^1.13.6",
     "antd": "^3.2.3",
     "find": "^0.2.9",
     "jasmine": "^3.1.0",
@@ -34,6 +36,7 @@
     "ant",
     "design",
     "ng-zorro",
+    "react",
     "fonticon"
   ]
 }

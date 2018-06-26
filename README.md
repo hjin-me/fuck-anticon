@@ -1,10 +1,11 @@
 # fuck-anticon
-for Ng Zorro font-icon Local Deployment.
+for Ng Zorro or Antd(React) font-icon Local Deployment.
 
 ## Feature
 
 1. No more request ali server;
-2. Use Webpack for bundle fonts.
+2. Use Webpack for bundle fonts;
+3. No less.
 
 ## Install
 
@@ -23,7 +24,7 @@ yarn add --dev @hjin/fuck-anticon
 },
 ```
 
-3. Add fonts to your global style. 
+3. (Optional) Add fonts to your global style Only for NgZorro 0.6 or lower. 
 
 ```
 @font-face {

@@ -4,21 +4,20 @@ const https = require("https");
 const url = require("url");
 const replace = require("replace-in-file");
 module.exports = () => {
-  let cssPath = path.join(
-    process.cwd(),
-    "./node_modules/ng-zorro-antd/src/antd.css"
-  );
-
   const options = {
-    files: [cssPath],
+    files: ["node_modules/ng-zorro-antd/src/*.css"],
     from: /https:\/\/at\.alicdn\.com\/t\//g,
     to: "./"
   };
   console.log("download antd's font file...");
+  let cssPath = path.join(
+    process.cwd(),
+    "./node_modules/ng-zorro-antd/src/ng-zorro-antd.css"
+  );
   let cssContent = fs.readFileSync(cssPath, {
     encoding: "utf8"
   });
-  const distDir = path.join(process.cwd(), "./node_modules/antd/dist");
+  const distDir = path.join(process.cwd(), "./node_modules/ng-zorro-antd/src");
   let urlRegex = /https:\/\/at\.alicdn\.com\/t\/font_[_a-zA-Z0-9]+\.(eot|woff|ttf|svg)\b/g;
   let fonts = new Set(cssContent.match(urlRegex));
   let downloadAll = [];
