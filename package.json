@@ -1,6 +1,6 @@
 {
   "name": "@hjin/fuck-anticon",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "AntD or NgZorro font icon local deployment",
   "main": "index.js",
   "repository": {

@@ -4,13 +4,10 @@ const https = require("https");
 const url = require("url");
 const replace = require("replace-in-file");
 module.exports = () => {
-  let cssPath = path.join(
-    process.cwd(),
-    "./node_modules/ng-zorro-antd/src/antd.css"
-  );
+  let cssPath = path.join(process.cwd(), "./node_modules/antd/dist/antd.css");
 
   const options = {
-    files: [cssPath],
+    files: ["node_modules/antd/dist/*.css"],
     from: /https:\/\/at\.alicdn\.com\/t\//g,
     to: "./"
   };
